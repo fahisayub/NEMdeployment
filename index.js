@@ -3,11 +3,13 @@ require('dotenv').config();
 
 const app=express();
 let PORT=process.env.PORT||8080;
-app.get('/',async(req,res)=>{
+app.get('/',(req,res)=>{
 
 res.send('welcome to home');
 })
-
+app.get('/products',(req,res)=>{
+    res.send('All products')
+})
 
 
 app.listen(PORT,()=>{
