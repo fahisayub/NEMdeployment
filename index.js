@@ -10,7 +10,9 @@ res.send('welcome to home');
 app.get('/products',(req,res)=>{
     res.send('All products')
 })
-
+app.get('/user',(req,res)=>{
+    res.send('All Users');
+})
 
 app.listen(PORT,()=>{
    
